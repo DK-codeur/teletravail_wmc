@@ -2,272 +2,20 @@
 <html dir="ltr" lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <!-- Tell the browser to be responsive to screen width -->
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <!-- Favicon icon -->
-    <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon.png">
-    <title>ADMIN | Teletravail</title>
-    <!-- This Page CSS -->
-    <link href="assets/libs/summernote/dist/summernote-bs4.css" rel="stylesheet">
-    <link href="assets/libs/dropzone/dist/min/dropzone.min.css" rel="stylesheet">
-    <!-- Custom CSS -->
-    <link href="dist/css/style.min.css" rel="stylesheet">
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-<![endif]-->
+    <?php include_once 'views/includes/head.php'?>
+    <title><?= WEBSITE_TITLE .' | '. ucfirst(str_replace('-', ' ', $page)); ?></title>
 </head>
 
 <body>
-    <!-- ============================================================== -->
-    <!-- Preloader - style you can find in spinners.css -->
-    <!-- ============================================================== -->
-    <div class="preloader">
-        <div class="lds-ripple">
-            <div class="lds-pos"></div>
-            <div class="lds-pos"></div>
-        </div>
-    </div>
-    <!-- ============================================================== -->
-    <!-- Main wrapper - style you can find in pages.scss -->
-    <!-- ============================================================== -->
+
     <div id="main-wrapper">
-        <!-- ============================================================== -->
-        <!-- Topbar header - style you can find in pages.scss -->
-        <!-- ============================================================== -->
-        <header class="topbar">
-            <nav class="navbar top-navbar navbar-expand-md navbar-dark">
-                <div class="navbar-header">
-                    <!-- This is for the sidebar toggle which is visible on mobile only -->
-                    <a class="nav-toggler waves-effect waves-light d-block d-md-none" href="javascript:void(0)">
-                        <i class="ti-menu ti-close"></i>
-                    </a>
-                    <!-- ============================================================== -->
-                    <!-- Logo -->
-                    <!-- ============================================================== -->
-                    <a class="navbar-brand" href="index.html">
-                      <div style="width: 100%; color: white; font-weight: 500;">ADMIN</div>
-                    </a>
-               
-                    <a class="topbartoggler d-block d-md-none waves-effect waves-light" href="javascript:void(0)" data-toggle="collapse" data-target="#navbarSupportedContent"
-                        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                        <i class="ti-more"></i>
-                    </a>
-                </div>
-                <!-- ============================================================== -->
-                <!-- End Logo -->
-                <!-- ============================================================== -->
-                <div class="navbar-collapse collapse" id="navbarSupportedContent">
-                    <!-- ============================================================== -->
-                    <!-- toggle and nav items -->
-                    <!-- ============================================================== -->
-                    <ul class="navbar-nav float-left mr-auto">
-                        <li class="nav-item d-none d-md-block">
-                            <a class="nav-link sidebartoggler waves-effect waves-light" href="javascript:void(0)" data-sidebartype="mini-sidebar">
-                                <i class="sl-icon-menu font-20"></i>
-                            </a>
-                        </li>
-                        <!-- ============================================================== -->
-                        <!-- mega menu -->
-                        <!-- ============================================================== -->
-                     
 
-                    </ul>
-                    <!-- ============================================================== -->
-                    <!-- Right side toggle and nav items -->
-                    <!-- ============================================================== -->
-                    <ul class="navbar-nav float-right">
-                        <!-- ============================================================== -->
-                        <!-- Search -->
-                        <!-- ============================================================== -->
-                        <li class="nav-item search-box">
-                            <a class="nav-link waves-effect waves-dark" href="javascript:void(0)">
-                                <i class="ti-search font-16"></i>
-                            </a>
-                            <form class="app-search position-absolute">
-                                <input type="text" class="form-control" placeholder="Search &amp; enter">
-                                <a class="srh-btn">
-                                    <i class="ti-close"></i>
-                                </a>
-                            </form>
-                        </li>
-                        <!-- ============================================================== -->
-                        <!-- create new -->
-                        <!-- ============================================================== -->
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown2" role="button" data-toggle="dropdown" aria-haspopup="true"
-                                aria-expanded="false">
-                                <i class="flag-icon flag-icon-ci font-18"></i>
-                            </a>
-                        </li>
+        <!-- Topbar header -->
+        <?php include_once 'views/includes/header.php' ?>
+        <!-- End Topbar header -->    
 
-                        <!-- ============================================================== -->
-                        <!-- User profile and search -->
-                        <!-- ============================================================== -->
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle text-muted waves-effect waves-dark pro-pic" href="" data-toggle="dropdown" aria-haspopup="true"
-                                aria-expanded="false">
-                                <img src="assets/images/users/1.jpg" alt="user" class="rounded-circle" width="31">
-                            </a>
-                            <div class="dropdown-menu dropdown-menu-right user-dd animated flipInY">
-                                <span class="with-arrow">
-                                    <span class="bg-primary"></span>
-                                </span>
-                                <div class="d-flex no-block align-items-center p-15 bg-primary text-white m-b-10">
-                                    <div class="">
-                                        <img src="assets/images/users/1.jpg" alt="user" class="img-circle" width="60">
-                                    </div>
-                                    <div class="m-l-10">
-                                        <h4 class="m-b-0">Nicole Adjobi</h4>
-                                        <p class=" m-b-0">varun@gmail.com</p>
-                                    </div>
-                                </div>
-
-                                <a class="dropdown-item" href="javascript:void(0)">
-                                    <i class="ti-user m-r-5 m-l-5"></i> My Profile</a>
-                                <a class="dropdown-item" href="javascript:void(0)">
-                                    <i class="ti-wallet m-r-5 m-l-5"></i> My Balance</a>
-                                <a class="dropdown-item" href="javascript:void(0)">
-                                    <i class="ti-email m-r-5 m-l-5"></i> Inbox</a>
-                                <div class="dropdown-divider"></div>
-                                <a class="dropdown-item" href="javascript:void(0)">
-                                    <i class="ti-settings m-r-5 m-l-5"></i> Account Setting</a>
-                                <div class="dropdown-divider"></div>
-                                <a class="dropdown-item" href="javascript:void(0)">
-                                    <i class="fa fa-power-off m-r-5 m-l-5"></i> Logout</a>
-                                <div class="dropdown-divider"></div>
-                                <div class="p-l-30 p-10">
-                                    <a href="javascript:void(0)" class="btn btn-sm btn-success btn-rounded">View Profile</a>
-                                </div>
-                            </div>
-                        </li>
-                        <!-- ============================================================== -->
-                        <!-- User profile and search -->
-                        <!-- ============================================================== -->
-                    </ul>
-                </div>
-            </nav>
-        </header>
-        <!-- ============================================================== -->
-        <!-- End Topbar header -->
-        <!-- ============================================================== -->
-        
         <!-- SIDE BAR-->
-        <aside class="left-sidebar">
-            <!-- Sidebar scroll-->
-            <div class="scroll-sidebar">
-                
-                <nav class="sidebar-nav">
-                    <ul id="sidebarnav">
-                        <!-- User Profile-->
-                        <li>
-                            <!-- User Profile-->
-                            <div class="user-profile dropdown m-t-20">
-                                <div class="user-pic">
-                                    <img src="assets/images/users/1.jpg" alt="users" class="rounded-circle img-fluid" />
-                                </div>
-                                <div class="user-content hide-menu m-t-10">
-                                    <h5 class="m-b-10 user-name font-medium">Teletravail</h5>
-                                </div>
-                            </div>
-                            <!-- End User Profile-->
-                        </li>
-                        <li class="sidebar-item">
-                            <a class="sidebar-link waves-effect waves-dark sidebar-link" href="index.html" aria-expanded="false">
-                                <i class="sl-icon-home"></i>
-                                <span class="hide-menu">Dashboard</span>
-                            </a>
-                        </li>
-
-                        <li class="sidebar-item">
-                            <a class="sidebar-link waves-effect waves-dark sidebar-link" href="new-reunion.html" aria-expanded="false">
-                                <i class="sl-icon-people"></i>
-                                <span class="hide-menu">Organiser une reunion</span>
-                            </a>
-                        </li>
-                       
-
-                        <li class="sidebar-item">
-                            <a class="sidebar-link has-arrow waves-effect waves-dark" href="javascript:void(0)" aria-expanded="false">
-                                <i class="mdi mdi-account-outline"></i>
-                                <span class="hide-menu">Membres</span>
-                            </a>
-                            <ul aria-expanded="false" class="collapse first-level">
-                                <li class="sidebar-item">
-                                    <a href="!#" class="sidebar-link">
-                                        <i class="mdi mdi-octagram"></i>
-                                        <span class="hide-menu"> Nouveau Membre</span>
-                                    </a>
-                                </li>
-                                <li class="sidebar-item">
-                                    <a href="membre.html" class="sidebar-link">
-                                        <i class="mdi mdi-octagram"></i>
-                                        <span class="hide-menu"> Liste des Membres</span>
-                                    </a>
-                                </li>
-                               
-                                
-                            </ul>
-                        </li>
-
-                        <li class="sidebar-item">
-                            <a class="sidebar-link has-arrow waves-effect waves-dark" href="javascript:void(0)" aria-expanded="false">
-                                <i class="mdi mdi-email"></i>
-                                <span class="hide-menu">Email</span>
-                            </a>
-                            <ul aria-expanded="false" class="collapse first-level">
-                                <li class="sidebar-item">
-                                    <a href="nouveau-email.html" class="sidebar-link">
-                                        <i class="mdi mdi-octagram"></i>
-                                        <span class="hide-menu"> Nouveau email</span>
-                                    </a>
-                                </li>
-                                <li class="sidebar-item">
-                                    <a href="email-envoye.html" class="sidebar-link">
-                                        <i class="mdi mdi-octagram"></i>
-                                        <span class="hide-menu"> Email envoyes</span>
-                                    </a>
-                                </li>
-                               
-                                
-                            </ul>
-                        </li>
-
-                        <li class="sidebar-item">
-                            <a class="sidebar-link has-arrow waves-effect waves-dark" href="javascript:void(0)" aria-expanded="false">
-                                <i class="mdi mdi-message"></i>
-                                <span class="hide-menu">SMS</span>
-                            </a>
-                            <ul aria-expanded="false" class="collapse first-level">
-                                <li class="sidebar-item">
-                                    <a href="javascript:void(0)" class="sidebar-link">
-                                        <i class="mdi mdi-octagram"></i>
-                                        <span class="hide-menu"> Nouveau SMS</span>
-                                    </a>
-                                </li>
-                                <li class="sidebar-item">
-                                    <a href="javascript:void(0)" class="sidebar-link">
-                                        <i class="mdi mdi-octagram"></i>
-                                        <span class="hide-menu"> SMS envoyes</span>
-                                    </a>
-                                </li>
-                               
-                                
-                            </ul>
-                        </li>
-
-                    </ul>
-                </nav>
-
-            </div>
-            <!-- End Sidebar scroll-->
-        </aside>
+        <?php include_once 'views/includes/leftside.php' ?>
         <!-- END SIDE BAR -->
 
         <!-- ============================================================== -->
@@ -343,9 +91,9 @@
                                     <!-- star -->
                                     
                                     <!-- User -->
-                                    <td class="user-image"><img src="assets/images/users/1.jpg" alt="user" class="rounded-circle" width="30"></td>
+                                    <td class="user-image"><img src="style/assets/images/users/1.jpg" alt="user" class="rounded-circle" width="30"></td>
                                     <td class="user-name">
-                                        <h6 class="m-b-0">Information RHDP</h6>
+                                        <h6 class="m-b-0">Information MPR</h6>
                                     </td>
                                     <!-- Message -->
                                     <td class="max-texts"> <a class="link" href="javascript: void(0)"><span class="label label-danger m-r-10">sensibilisation</span> <span class="blue-grey-text text-darken-4">Lorem ipsum perspiciatis-</span> unde omnis iste natus error sit voluptatem</a></td>
@@ -368,82 +116,7 @@
                                     <!-- star -->
                                     
                                     <!-- User -->
-                                    <td class="user-image"><img src="assets/images/users/1.jpg" alt="user" class="rounded-circle" width="30"></td>
-                                    <td class="user-name">
-                                        <h6 class="m-b-0">Meeting</h6>
-                                    </td>
-                                    <!-- Message -->
-                                    <td class="max-texts"> <a class="link" href="javascript: void(0)"><span class="label label-danger m-r-10">sensibilisation</span> <span class="blue-grey-text text-darken-4">Lorem ipsum perspiciatis-</span> unde omnis iste natus error sit voluptatem</a></td>
-                                    <!-- Attachment -->
-                                    <td class="clip"><i class="fa fa-paperclip"></i></td>
-                                    <!-- Time -->
-                                    <td class="time"> 12:30 </td>
-                                </tr>
-                                <!-- row -->
-
-                                <!-- row -->
-                                <tr class="unread">
-                                    <!-- label -->
-                                    <td class="chb">
-                                        <div class="custom-control custom-checkbox">
-                                            <input type="checkbox" class="custom-control-input" id="cst1">
-                                            <label class="custom-control-label" for="cst1">&nbsp;</label>
-                                        </div>
-                                    </td>
-                                    <!-- star -->
-                                    
-                                    <!-- User -->
-                                    <td class="user-image"><img src="assets/images/users/1.jpg" alt="user" class="rounded-circle" width="30"></td>
-                                    <td class="user-name">
-                                        <h6 class="m-b-0">Information RHDP</h6>
-                                    </td>
-                                    <!-- Message -->
-                                    <td class="max-texts"> <a class="link" href="javascript: void(0)"><span class="label label-danger m-r-10">sensibilisation</span> <span class="blue-grey-text text-darken-4">Lorem ipsum perspiciatis-</span> unde omnis iste natus error sit voluptatem</a></td>
-                                    <!-- Attachment -->
-                                    <td class="clip"><i class="fa fa-paperclip"></i></td>
-                                    <!-- Time -->
-                                    <td class="time"> 12:30 </td>
-                                </tr>
-                                <!-- row -->
-
-                                <!-- row -->
-                                <tr class="unread">
-                                    <!-- label -->
-                                    <td class="chb">
-                                        <div class="custom-control custom-checkbox">
-                                            <input type="checkbox" class="custom-control-input" id="cst1">
-                                            <label class="custom-control-label" for="cst1">&nbsp;</label>
-                                        </div>
-                                    </td>
-                                    <!-- star -->
-                                    
-                                    <!-- User -->
-                                    <td class="user-image"><img src="assets/images/users/1.jpg" alt="user" class="rounded-circle" width="30"></td>
-                                    <td class="user-name">
-                                        <h6 class="m-b-0">Information RHDP</h6>
-                                    </td>
-                                    <!-- Message -->
-                                    <td class="max-texts"> <a class="link" href="javascript: void(0)"><span class="label label-danger m-r-10">sensibilisation</span> <span class="blue-grey-text text-darken-4">Lorem ipsum perspiciatis-</span> unde omnis iste natus error sit voluptatem</a></td>
-                                    <!-- Attachment -->
-                                    <td class="clip"><i class="fa fa-paperclip"></i></td>
-                                    <!-- Time -->
-                                    <td class="time"> 12:30 </td>
-                                </tr>
-                                <!-- row -->
-
-                                <!-- row -->
-                                <tr class="unread">
-                                    <!-- label -->
-                                    <td class="chb">
-                                        <div class="custom-control custom-checkbox">
-                                            <input type="checkbox" class="custom-control-input" id="cst1">
-                                            <label class="custom-control-label" for="cst1">&nbsp;</label>
-                                        </div>
-                                    </td>
-                                    <!-- star -->
-                                    
-                                    <!-- User -->
-                                    <td class="user-image"><img src="assets/images/users/1.jpg" alt="user" class="rounded-circle" width="30"></td>
+                                    <td class="user-image"><img src="style/assets/images/users/1.jpg" alt="user" class="rounded-circle" width="30"></td>
                                     <td class="user-name">
                                         <h6 class="m-b-0">Meeting</h6>
                                     </td>
@@ -468,9 +141,9 @@
                                     <!-- star -->
                                     
                                     <!-- User -->
-                                    <td class="user-image"><img src="assets/images/users/1.jpg" alt="user" class="rounded-circle" width="30"></td>
+                                    <td class="user-image"><img src="style/assets/images/users/1.jpg" alt="user" class="rounded-circle" width="30"></td>
                                     <td class="user-name">
-                                        <h6 class="m-b-0">Information RHDP</h6>
+                                        <h6 class="m-b-0">Information MPR</h6>
                                     </td>
                                     <!-- Message -->
                                     <td class="max-texts"> <a class="link" href="javascript: void(0)"><span class="label label-danger m-r-10">sensibilisation</span> <span class="blue-grey-text text-darken-4">Lorem ipsum perspiciatis-</span> unde omnis iste natus error sit voluptatem</a></td>
@@ -493,9 +166,9 @@
                                     <!-- star -->
                                     
                                     <!-- User -->
-                                    <td class="user-image"><img src="assets/images/users/1.jpg" alt="user" class="rounded-circle" width="30"></td>
+                                    <td class="user-image"><img src="style/assets/images/users/1.jpg" alt="user" class="rounded-circle" width="30"></td>
                                     <td class="user-name">
-                                        <h6 class="m-b-0">Information RHDP</h6>
+                                        <h6 class="m-b-0">Information MPR</h6>
                                     </td>
                                     <!-- Message -->
                                     <td class="max-texts"> <a class="link" href="javascript: void(0)"><span class="label label-danger m-r-10">sensibilisation</span> <span class="blue-grey-text text-darken-4">Lorem ipsum perspiciatis-</span> unde omnis iste natus error sit voluptatem</a></td>
@@ -518,7 +191,82 @@
                                     <!-- star -->
                                     
                                     <!-- User -->
-                                    <td class="user-image"><img src="assets/images/users/1.jpg" alt="user" class="rounded-circle" width="30"></td>
+                                    <td class="user-image"><img src="style/assets/images/users/1.jpg" alt="user" class="rounded-circle" width="30"></td>
+                                    <td class="user-name">
+                                        <h6 class="m-b-0">Meeting</h6>
+                                    </td>
+                                    <!-- Message -->
+                                    <td class="max-texts"> <a class="link" href="javascript: void(0)"><span class="label label-danger m-r-10">sensibilisation</span> <span class="blue-grey-text text-darken-4">Lorem ipsum perspiciatis-</span> unde omnis iste natus error sit voluptatem</a></td>
+                                    <!-- Attachment -->
+                                    <td class="clip"><i class="fa fa-paperclip"></i></td>
+                                    <!-- Time -->
+                                    <td class="time"> 12:30 </td>
+                                </tr>
+                                <!-- row -->
+
+                                <!-- row -->
+                                <tr class="unread">
+                                    <!-- label -->
+                                    <td class="chb">
+                                        <div class="custom-control custom-checkbox">
+                                            <input type="checkbox" class="custom-control-input" id="cst1">
+                                            <label class="custom-control-label" for="cst1">&nbsp;</label>
+                                        </div>
+                                    </td>
+                                    <!-- star -->
+                                    
+                                    <!-- User -->
+                                    <td class="user-image"><img src="style/assets/images/users/1.jpg" alt="user" class="rounded-circle" width="30"></td>
+                                    <td class="user-name">
+                                        <h6 class="m-b-0">Information MPR</h6>
+                                    </td>
+                                    <!-- Message -->
+                                    <td class="max-texts"> <a class="link" href="javascript: void(0)"><span class="label label-danger m-r-10">sensibilisation</span> <span class="blue-grey-text text-darken-4">Lorem ipsum perspiciatis-</span> unde omnis iste natus error sit voluptatem</a></td>
+                                    <!-- Attachment -->
+                                    <td class="clip"><i class="fa fa-paperclip"></i></td>
+                                    <!-- Time -->
+                                    <td class="time"> 12:30 </td>
+                                </tr>
+                                <!-- row -->
+
+                                <!-- row -->
+                                <tr class="unread">
+                                    <!-- label -->
+                                    <td class="chb">
+                                        <div class="custom-control custom-checkbox">
+                                            <input type="checkbox" class="custom-control-input" id="cst1">
+                                            <label class="custom-control-label" for="cst1">&nbsp;</label>
+                                        </div>
+                                    </td>
+                                    <!-- star -->
+                                    
+                                    <!-- User -->
+                                    <td class="user-image"><img src="style/assets/images/users/1.jpg" alt="user" class="rounded-circle" width="30"></td>
+                                    <td class="user-name">
+                                        <h6 class="m-b-0">Information MPR</h6>
+                                    </td>
+                                    <!-- Message -->
+                                    <td class="max-texts"> <a class="link" href="javascript: void(0)"><span class="label label-danger m-r-10">sensibilisation</span> <span class="blue-grey-text text-darken-4">Lorem ipsum perspiciatis-</span> unde omnis iste natus error sit voluptatem</a></td>
+                                    <!-- Attachment -->
+                                    <td class="clip"><i class="fa fa-paperclip"></i></td>
+                                    <!-- Time -->
+                                    <td class="time"> 12:30 </td>
+                                </tr>
+                                <!-- row -->
+
+                                <!-- row -->
+                                <tr class="unread">
+                                    <!-- label -->
+                                    <td class="chb">
+                                        <div class="custom-control custom-checkbox">
+                                            <input type="checkbox" class="custom-control-input" id="cst1">
+                                            <label class="custom-control-label" for="cst1">&nbsp;</label>
+                                        </div>
+                                    </td>
+                                    <!-- star -->
+                                    
+                                    <!-- User -->
+                                    <td class="user-image"><img src="style/assets/images/users/1.jpg" alt="user" class="rounded-circle" width="30"></td>
                                     <td class="user-name">
                                         <h6 class="m-b-0">Meeting</h6>
                                     </td>
@@ -598,7 +346,7 @@
                     </div>
                     <div class="card-body border-bottom">
                         <div class="d-flex no-block align-items-center m-b-40">
-                            <div class="m-r-10"><img src="assets/images/users/1.jpg" alt="user" class="rounded-circle" width="45"></div>
+                            <div class="m-r-10"><img src="style/assets/images/users/1.jpg" alt="user" class="rounded-circle" width="45"></div>
                             <div class="">
                                 <h5 class="m-b-0 font-16 font-medium">Hanna Gover <small> ( hgover@gmail.com )</small></h5><span>to Suniljoshi19@gmail.com</span>
                             </div>
@@ -626,25 +374,7 @@
                     </div>
                 </div>
             </div>
-            <!-- ============================================================== -->
-            <!-- End PAge Content -->
-            <!-- ============================================================== -->
-            <!-- ============================================================== -->
-            <!-- Right sidebar -->
-            <!-- ============================================================== -->
-            <!-- .right-sidebar -->
-            <!-- ============================================================== -->
-            <!-- End Right sidebar -->
-            <!-- ============================================================== -->
-            <!-- ============================================================== -->
-            <!-- End Container fluid  -->
-            <!-- ============================================================== -->
-            <!-- ============================================================== -->
-            <!-- footer -->
-            <!-- ============================================================== -->
-            <!-- ============================================================== -->
-            <!-- End footer -->
-            <!-- ============================================================== -->
+            
         </div>
         <!-- ============================================================== -->
         <!-- End Page wrapper  -->
@@ -736,30 +466,16 @@
     </aside>
 
     <div class="chat-windows"></div>
-    <!-- ============================================================== -->
     <!-- All Jquery -->
-    <!-- ============================================================== -->
-    <script src="assets/libs/jquery/dist/jquery.min.js"></script>
-    <!-- Bootstrap tether Core JavaScript -->
-    <script src="assets/libs/popper.js/dist/umd/popper.min.js"></script>
-    <script src="assets/libs/bootstrap/dist/js/bootstrap.min.js"></script>
-    <!-- apps -->
-    <script src="dist/js/app.min.js"></script>
-    <script src="dist/js/app.init.js"></script>
-    <script src="dist/js/app-style-switcher.js"></script>
-    <!-- slimscrollbar scrollbar JavaScript -->
-    <script src="assets/libs/perfect-scrollbar/dist/perfect-scrollbar.jquery.min.js"></script>
-    <script src="assets/extra-libs/sparkline/sparkline.js"></script>
-    <!--Wave Effects -->
-    <script src="dist/js/waves.js"></script>
-    <!--Menu sidebar -->
-    <script src="dist/js/sidebarmenu.js"></script>
-    <!--Custom JavaScript -->
-    <script src="dist/js/custom.min.js"></script>
-    <!-- This Page JS -->
-    <script src="dist/js/pages/email/email.js"></script>
-    <script src="assets/libs/summernote/dist/summernote-bs4.min.js"></script>
-    <script src="assets/libs/dropzone/dist/min/dropzone.min.js"></script>
+
+        <!-- customizer Panel -->
+    <?php include_once 'views/includes/customiser.php' ?>   
+    <!-- end customizer Panel -->
+
+    <div class="chat-windows"></div>
+    <!-- All Jquery -->
+    <?php include_once 'views/includes/script.php' ?> 
+
     <script>
     $('#summernote').summernote({
         placeholder: 'Type your email Here',

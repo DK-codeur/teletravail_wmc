@@ -2,273 +2,22 @@
 <html dir="ltr" lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <!-- Tell the browser to be responsive to screen width -->
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <!-- Favicon icon -->
-    <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon.png">
-    <title>ADMIN | Teletravail</title>
-    <!-- This page plugin CSS -->
-    <link href="assets/libs/datatables.net-bs4/css/dataTables.bootstrap4.css" rel="stylesheet">
-    <!-- Custom CSS -->
-    <link href="dist/css/style.min.css" rel="stylesheet">
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-<![endif]-->
+    <?php include_once 'views/includes/head.php'?>
+    <title><?= WEBSITE_TITLE .' | '. ucfirst(str_replace('-', ' ', $page)); ?></title>
 </head>
 
 <body>
-    <!-- ============================================================== -->
-    <!-- Preloader - style you can find in spinners.css -->
-    <!-- ============================================================== -->
-    <div class="preloader">
-        <div class="lds-ripple">
-            <div class="lds-pos"></div>
-            <div class="lds-pos"></div>
-        </div>
-    </div>
-    <!-- ============================================================== -->
-    <!-- Main wrapper - style you can find in pages.scss -->
-    <!-- ============================================================== -->
+    
     <div id="main-wrapper">
-        <!-- ============================================================== -->
-        <!-- Topbar header - style you can find in pages.scss -->
-        <!-- ============================================================== -->
-        <header class="topbar">
-            <nav class="navbar top-navbar navbar-expand-md navbar-dark">
-                <div class="navbar-header">
-                    <!-- This is for the sidebar toggle which is visible on mobile only -->
-                    <a class="nav-toggler waves-effect waves-light d-block d-md-none" href="javascript:void(0)">
-                        <i class="ti-menu ti-close"></i>
-                    </a>
-                    <!-- ============================================================== -->
-                    <!-- Logo -->
-                    <!-- ============================================================== -->
-                    <a class="navbar-brand" href="index.html">
-                      <div style="width: 100%; color: white; font-weight: 500;">ADMIN</div>
-                    </a>
-               
-                    <a class="topbartoggler d-block d-md-none waves-effect waves-light" href="javascript:void(0)" data-toggle="collapse" data-target="#navbarSupportedContent"
-                        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                        <i class="ti-more"></i>
-                    </a>
-                </div>
-                <!-- ============================================================== -->
-                <!-- End Logo -->
-                <!-- ============================================================== -->
-                <div class="navbar-collapse collapse" id="navbarSupportedContent">
-                    <!-- ============================================================== -->
-                    <!-- toggle and nav items -->
-                    <!-- ============================================================== -->
-                    <ul class="navbar-nav float-left mr-auto">
-                        <li class="nav-item d-none d-md-block">
-                            <a class="nav-link sidebartoggler waves-effect waves-light" href="javascript:void(0)" data-sidebartype="mini-sidebar">
-                                <i class="sl-icon-menu font-20"></i>
-                            </a>
-                        </li>
-                        <!-- ============================================================== -->
-                        <!-- mega menu -->
-                        <!-- ============================================================== -->
-                     
-
-                    </ul>
-                    <!-- ============================================================== -->
-                    <!-- Right side toggle and nav items -->
-                    <!-- ============================================================== -->
-                    <ul class="navbar-nav float-right">
-                        <!-- ============================================================== -->
-                        <!-- Search -->
-                        <!-- ============================================================== -->
-                        <li class="nav-item search-box">
-                            <a class="nav-link waves-effect waves-dark" href="javascript:void(0)">
-                                <i class="ti-search font-16"></i>
-                            </a>
-                            <form class="app-search position-absolute">
-                                <input type="text" class="form-control" placeholder="Search &amp; enter">
-                                <a class="srh-btn">
-                                    <i class="ti-close"></i>
-                                </a>
-                            </form>
-                        </li>
-                        <!-- ============================================================== -->
-                        <!-- create new -->
-                        <!-- ============================================================== -->
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown2" role="button" data-toggle="dropdown" aria-haspopup="true"
-                                aria-expanded="false">
-                                <i class="flag-icon flag-icon-ci font-18"></i>
-                            </a>
-                        </li>
-
-                        <!-- ============================================================== -->
-                        <!-- User profile and search -->
-                        <!-- ============================================================== -->
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle text-muted waves-effect waves-dark pro-pic" href="" data-toggle="dropdown" aria-haspopup="true"
-                                aria-expanded="false">
-                                <img src="assets/images/users/1.jpg" alt="user" class="rounded-circle" width="31">
-                            </a>
-                            <div class="dropdown-menu dropdown-menu-right user-dd animated flipInY">
-                                <span class="with-arrow">
-                                    <span class="bg-primary"></span>
-                                </span>
-                                <div class="d-flex no-block align-items-center p-15 bg-primary text-white m-b-10">
-                                    <div class="">
-                                        <img src="assets/images/users/1.jpg" alt="user" class="img-circle" width="60">
-                                    </div>
-                                    <div class="m-l-10">
-                                        <h4 class="m-b-0">Nicole Adjobi</h4>
-                                        <p class=" m-b-0">varun@gmail.com</p>
-                                    </div>
-                                </div>
-
-                                <a class="dropdown-item" href="javascript:void(0)">
-                                    <i class="ti-user m-r-5 m-l-5"></i> My Profile</a>
-                                <a class="dropdown-item" href="javascript:void(0)">
-                                    <i class="ti-wallet m-r-5 m-l-5"></i> My Balance</a>
-                                <a class="dropdown-item" href="javascript:void(0)">
-                                    <i class="ti-email m-r-5 m-l-5"></i> Inbox</a>
-                                <div class="dropdown-divider"></div>
-                                <a class="dropdown-item" href="javascript:void(0)">
-                                    <i class="ti-settings m-r-5 m-l-5"></i> Account Setting</a>
-                                <div class="dropdown-divider"></div>
-                                <a class="dropdown-item" href="javascript:void(0)">
-                                    <i class="fa fa-power-off m-r-5 m-l-5"></i> Logout</a>
-                                <div class="dropdown-divider"></div>
-                                <div class="p-l-30 p-10">
-                                    <a href="javascript:void(0)" class="btn btn-sm btn-success btn-rounded">View Profile</a>
-                                </div>
-                            </div>
-                        </li>
-                        <!-- ============================================================== -->
-                        <!-- User profile and search -->
-                        <!-- ============================================================== -->
-                    </ul>
-                </div>
-            </nav>
-        </header>
-        <!-- ============================================================== -->
+        <!-- Topbar header -->
+        <?php include_once 'views/includes/header.php' ?>
         <!-- End Topbar header -->
-        <!-- ============================================================== -->
 
-       <!-- SIDE BAR-->
-       <aside class="left-sidebar">
-        <!-- Sidebar scroll-->
-        <div class="scroll-sidebar">
-            
-            <nav class="sidebar-nav">
-                <ul id="sidebarnav">
-                    <!-- User Profile-->
-                    <li>
-                        <!-- User Profile-->
-                        <div class="user-profile dropdown m-t-20">
-                            <div class="user-pic">
-                                <img src="assets/images/users/1.jpg" alt="users" class="rounded-circle img-fluid" />
-                            </div>
-                            <div class="user-content hide-menu m-t-10">
-                                <h5 class="m-b-10 user-name font-medium">Teletravail</h5>
-                            </div>
-                        </div>
-                        <!-- End User Profile-->
-                    </li>
-                    <li class="sidebar-item">
-                        <a class="sidebar-link waves-effect waves-dark sidebar-link" href="index.html" aria-expanded="false">
-                            <i class="sl-icon-home"></i>
-                            <span class="hide-menu">Dashboard</span>
-                        </a>
-                    </li>
+        <!-- SIDE BAR-->
+        <?php include_once 'views/includes/leftside.php' ?>
+        <!--END SIDE BAR-->
 
-                    <li class="sidebar-item">
-                        <a class="sidebar-link waves-effect waves-dark sidebar-link" href="new-reunion.html" aria-expanded="false">
-                            <i class="sl-icon-people"></i>
-                            <span class="hide-menu">Organiser une reunion</span>
-                        </a>
-                    </li>
-                   
-
-                    <li class="sidebar-item">
-                        <a class="sidebar-link has-arrow waves-effect waves-dark" href="javascript:void(0)" aria-expanded="false">
-                            <i class="mdi mdi-account-outline"></i>
-                            <span class="hide-menu">Membres</span>
-                        </a>
-                        <ul aria-expanded="false" class="collapse first-level">
-                            <li class="sidebar-item">
-                                <a href="!#" class="sidebar-link">
-                                    <i class="mdi mdi-octagram"></i>
-                                    <span class="hide-menu"> Nouveau Membre</span>
-                                </a>
-                            </li>
-                            <li class="sidebar-item">
-                                <a href="membre.html" class="sidebar-link">
-                                    <i class="mdi mdi-octagram"></i>
-                                    <span class="hide-menu"> Liste des Membres</span>
-                                </a>
-                            </li>
-                           
-                            
-                        </ul>
-                    </li>
-
-                    <li class="sidebar-item">
-                        <a class="sidebar-link has-arrow waves-effect waves-dark" href="javascript:void(0)" aria-expanded="false">
-                            <i class="mdi mdi-email"></i>
-                            <span class="hide-menu">Email</span>
-                        </a>
-                        <ul aria-expanded="false" class="collapse first-level">
-                            <li class="sidebar-item">
-                                <a href="nouveau-email.html" class="sidebar-link">
-                                    <i class="mdi mdi-octagram"></i>
-                                    <span class="hide-menu"> Nouveau email</span>
-                                </a>
-                            </li>
-                            <li class="sidebar-item">
-                                <a href="email-envoye.html" class="sidebar-link">
-                                    <i class="mdi mdi-octagram"></i>
-                                    <span class="hide-menu"> Email envoyes</span>
-                                </a>
-                            </li>
-                           
-                            
-                        </ul>
-                    </li>
-
-                    <li class="sidebar-item">
-                        <a class="sidebar-link has-arrow waves-effect waves-dark" href="javascript:void(0)" aria-expanded="false">
-                            <i class="mdi mdi-message"></i>
-                            <span class="hide-menu">SMS</span>
-                        </a>
-                        <ul aria-expanded="false" class="collapse first-level">
-                            <li class="sidebar-item">
-                                <a href="javascript:void(0)" class="sidebar-link">
-                                    <i class="mdi mdi-octagram"></i>
-                                    <span class="hide-menu"> Nouveau SMS</span>
-                                </a>
-                            </li>
-                            <li class="sidebar-item">
-                                <a href="javascript:void(0)" class="sidebar-link">
-                                    <i class="mdi mdi-octagram"></i>
-                                    <span class="hide-menu"> SMS envoyes</span>
-                                </a>
-                            </li>
-                           
-                            
-                        </ul>
-                    </li>
-
-                </ul>
-            </nav>
-
-        </div>
-        <!-- End Sidebar scroll-->
-    </aside>
-    <!-- END SIDE BAR -->
-        
+        <!-- Page wrapper  -->
         <div class="page-wrapper">
             <!-- ============================================================== -->
             <!-- Container fluid  -->
@@ -308,7 +57,7 @@
                                         <tbody>
                                             <tr>
                                                 <td>
-                                                    <a href="#!"><img src="assets/images/users/1.jpg" alt="user" class="rounded-circle" width="30" /> Nicole</a>
+                                                    <a href="#!"><img src="style/assets/images/users/1.jpg" alt="user" class="rounded-circle" width="30" /> Nicole</a>
                                                 </td>
                                                 <td> Adj*bi</td>
                                                 <td>88202012</td>
@@ -324,7 +73,7 @@
 
                                             <tr>
                                                 <td>
-                                                    <a href="#!"><img src="assets/images/users/1.jpg" alt="user" class="rounded-circle" width="30" /> Nicole</a>
+                                                    <a href="#!"><img src="style/assets/images/users/1.jpg" alt="user" class="rounded-circle" width="30" /> Nicole</a>
                                                 </td>
                                                 <td> Adj*bi</td>
                                                 <td>88202012</td>
@@ -340,7 +89,7 @@
 
                                             <tr>
                                                 <td>
-                                                    <a href="#!"><img src="assets/images/users/1.jpg" alt="user" class="rounded-circle" width="30" /> Nicole</a>
+                                                    <a href="#!"><img src="style/assets/images/users/1.jpg" alt="user" class="rounded-circle" width="30" /> Nicole</a>
                                                 </td>
                                                 <td> Adj*bi</td>
                                                 <td>88202012</td>
@@ -356,7 +105,7 @@
 
                                             <tr>
                                                 <td>
-                                                    <a href="#!"><img src="assets/images/users/1.jpg" alt="user" class="rounded-circle" width="30" /> Nicole</a>
+                                                    <a href="#!"><img src="style/assets/images/users/1.jpg" alt="user" class="rounded-circle" width="30" /> Nicole</a>
                                                 </td>
                                                 <td> Adj*bi</td>
                                                 <td>88202012</td>
@@ -372,7 +121,7 @@
 
                                             <tr>
                                                 <td>
-                                                    <a href="#!"><img src="assets/images/users/1.jpg" alt="user" class="rounded-circle" width="30" /> Nicole</a>
+                                                    <a href="#!"><img src="style/assets/images/users/1.jpg" alt="user" class="rounded-circle" width="30" /> Nicole</a>
                                                 </td>
                                                 <td> Adj*bi</td>
                                                 <td>88202012</td>
@@ -388,7 +137,7 @@
 
                                             <tr>
                                                 <td>
-                                                    <a href="#!"><img src="assets/images/users/1.jpg" alt="user" class="rounded-circle" width="30" /> Nicole</a>
+                                                    <a href="#!"><img src="style/assets/images/users/1.jpg" alt="user" class="rounded-circle" width="30" /> Nicole</a>
                                                 </td>
                                                 <td> Adj*bi</td>
                                                 <td>88202012</td>
@@ -404,7 +153,7 @@
 
                                             <tr>
                                                 <td>
-                                                    <a href="#!"><img src="assets/images/users/1.jpg" alt="user" class="rounded-circle" width="30" /> Nicole</a>
+                                                    <a href="#!"><img src="style/assets/images/users/1.jpg" alt="user" class="rounded-circle" width="30" /> Nicole</a>
                                                 </td>
                                                 <td> Adj*bi</td>
                                                 <td>88202012</td>
@@ -420,7 +169,7 @@
 
                                             <tr>
                                                 <td>
-                                                    <a href="#!"><img src="assets/images/users/1.jpg" alt="user" class="rounded-circle" width="30" /> Nicole</a>
+                                                    <a href="#!"><img src="style/assets/images/users/1.jpg" alt="user" class="rounded-circle" width="30" /> Nicole</a>
                                                 </td>
                                                 <td> Adj*bi</td>
                                                 <td>88202012</td>
@@ -436,7 +185,7 @@
 
                                             <tr>
                                                 <td>
-                                                    <a href="#!"><img src="assets/images/users/1.jpg" alt="user" class="rounded-circle" width="30" /> Nicole</a>
+                                                    <a href="#!"><img src="style/assets/images/users/1.jpg" alt="user" class="rounded-circle" width="30" /> Nicole</a>
                                                 </td>
                                                 <td> Adj*bi</td>
                                                 <td>88202012</td>
@@ -452,7 +201,7 @@
 
                                             <tr>
                                                 <td>
-                                                    <a href="#!"><img src="assets/images/users/1.jpg" alt="user" class="rounded-circle" width="30" /> Nicole</a>
+                                                    <a href="#!"><img src="style/assets/images/users/1.jpg" alt="user" class="rounded-circle" width="30" /> Nicole</a>
                                                 </td>
                                                 <td> Adj*bi</td>
                                                 <td>88202012</td>
@@ -468,7 +217,7 @@
 
                                             <tr>
                                                 <td>
-                                                    <a href="#!"><img src="assets/images/users/1.jpg" alt="user" class="rounded-circle" width="30" /> Nicole</a>
+                                                    <a href="#!"><img src="style/assets/images/users/1.jpg" alt="user" class="rounded-circle" width="30" /> Nicole</a>
                                                 </td>
                                                 <td> Adj*bi</td>
                                                 <td>88202012</td>
@@ -484,7 +233,7 @@
 
                                             <tr>
                                                 <td>
-                                                    <a href="#!"><img src="assets/images/users/1.jpg" alt="user" class="rounded-circle" width="30" /> Nicole</a>
+                                                    <a href="#!"><img src="style/assets/images/users/1.jpg" alt="user" class="rounded-circle" width="30" /> Nicole</a>
                                                 </td>
                                                 <td> Adj*bi</td>
                                                 <td>88202012</td>
@@ -500,7 +249,7 @@
 
                                             <tr>
                                                 <td>
-                                                    <a href="#!"><img src="assets/images/users/1.jpg" alt="user" class="rounded-circle" width="30" /> Nicole</a>
+                                                    <a href="#!"><img src="style/assets/images/users/1.jpg" alt="user" class="rounded-circle" width="30" /> Nicole</a>
                                                 </td>
                                                 <td> Adj*bi</td>
                                                 <td>88202012</td>
@@ -516,7 +265,7 @@
 
                                             <tr>
                                                 <td>
-                                                    <a href="#!"><img src="assets/images/users/1.jpg" alt="user" class="rounded-circle" width="30" /> Nicole</a>
+                                                    <a href="#!"><img src="style/assets/images/users/1.jpg" alt="user" class="rounded-circle" width="30" /> Nicole</a>
                                                 </td>
                                                 <td> Adj*bi</td>
                                                 <td>88202012</td>
@@ -532,7 +281,7 @@
 
                                             <tr>
                                                 <td>
-                                                    <a href="#!"><img src="assets/images/users/1.jpg" alt="user" class="rounded-circle" width="30" /> Nicole</a>
+                                                    <a href="#!"><img src="style/assets/images/users/1.jpg" alt="user" class="rounded-circle" width="30" /> Nicole</a>
                                                 </td>
                                                 <td> Adj*bi</td>
                                                 <td>88202012</td>
@@ -663,132 +412,23 @@
             <!-- ============================================================== -->
     
         </div>
+        <!-- END Page wrapper  -->
 
-        <!-- ============================================================== -->
-        <!-- End Page wrapper  -->
-        <!-- ============================================================== -->
+        <!-- footer -->
+        <?php include_once 'views/includes/footer.php' ?>
+            <!-- end footer -->
 
-        <footer class="footer text-center">
-            copyright <a href="https://wmcci.com">&copy; wmcci</a>.
-        </footer>
     </div>
-    <!-- ============================================================== -->
+
     <!-- End Wrapper -->
-    <!-- ============================================================== -->
-    
+
     <!-- customizer Panel -->
-    <aside class="customizer">
-        <a href="javascript:void(0)" class="service-panel-toggle"><i class="fa fa-spin fa-cog"></i></a>
-        <div class="customizer-body">
-            <ul class="nav customizer-tab" role="tablist">
-                <li class="nav-item">
-                    <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true"><i class="mdi mdi-wrench font-20"></i></a>
-                </li>
-            </ul>
-            <div class="tab-content" id="pills-tabContent">
-                <!-- Tab 1 -->
-                <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
-                    <div class="p-15 border-bottom">
-                        <!-- Sidebar -->
-                        <h5 class="font-medium m-b-10 m-t-10">Layout Settings</h5>
-                        <div class="custom-control custom-checkbox m-t-10">
-                            <input type="checkbox" class="custom-control-input" name="theme-view" id="theme-view">
-                            <label class="custom-control-label" for="theme-view">Dark Theme</label>
-                        </div>
-                        <div class="custom-control custom-checkbox m-t-10">
-                            <input type="checkbox" class="custom-control-input sidebartoggler" name="collapssidebar" id="collapssidebar">
-                            <label class="custom-control-label" for="collapssidebar">Collapse Sidebar</label>
-                        </div>
-                        <div class="custom-control custom-checkbox m-t-10">
-                            <input type="checkbox" class="custom-control-input" name="sidebar-position" id="sidebar-position">
-                            <label class="custom-control-label" for="sidebar-position">Fixed Sidebar</label>
-                        </div>
-                        <div class="custom-control custom-checkbox m-t-10">
-                            <input type="checkbox" class="custom-control-input" name="header-position" id="header-position">
-                            <label class="custom-control-label" for="header-position">Fixed Header</label>
-                        </div>
-                        <div class="custom-control custom-checkbox m-t-10">
-                            <input type="checkbox" class="custom-control-input" name="boxed-layout" id="boxed-layout">
-                            <label class="custom-control-label" for="boxed-layout">Boxed Layout</label>
-                        </div>
-                    </div>
-                    <div class="p-15 border-bottom">
-                        <!-- Logo BG -->
-                        <h5 class="font-medium m-b-10 m-t-10">Logo Backgrounds</h5>
-                        <ul class="theme-color">
-                            <li class="theme-item"><a href="javascript:void(0)" class="theme-link" data-logobg="skin1"></a></li>
-                            <li class="theme-item"><a href="javascript:void(0)" class="theme-link" data-logobg="skin2"></a></li>
-                            <li class="theme-item"><a href="javascript:void(0)" class="theme-link" data-logobg="skin3"></a></li>
-                            <li class="theme-item"><a href="javascript:void(0)" class="theme-link" data-logobg="skin4"></a></li>
-                            <li class="theme-item"><a href="javascript:void(0)" class="theme-link" data-logobg="skin5"></a></li>
-                            <li class="theme-item"><a href="javascript:void(0)" class="theme-link" data-logobg="skin6"></a></li>
-                        </ul>
-                        <!-- Logo BG -->
-                    </div>
-                    <div class="p-15 border-bottom">
-                        <!-- Navbar BG -->
-                        <h5 class="font-medium m-b-10 m-t-10">Navbar Backgrounds</h5>
-                        <ul class="theme-color">
-                            <li class="theme-item"><a href="javascript:void(0)" class="theme-link" data-navbarbg="skin1"></a></li>
-                            <li class="theme-item"><a href="javascript:void(0)" class="theme-link" data-navbarbg="skin2"></a></li>
-                            <li class="theme-item"><a href="javascript:void(0)" class="theme-link" data-navbarbg="skin3"></a></li>
-                            <li class="theme-item"><a href="javascript:void(0)" class="theme-link" data-navbarbg="skin4"></a></li>
-                            <li class="theme-item"><a href="javascript:void(0)" class="theme-link" data-navbarbg="skin5"></a></li>
-                            <li class="theme-item"><a href="javascript:void(0)" class="theme-link" data-navbarbg="skin6"></a></li>
-                        </ul>
-                        <!-- Navbar BG -->
-                    </div>
-                    <div class="p-15 border-bottom">
-                        <!-- Logo BG -->
-                        <h5 class="font-medium m-b-10 m-t-10">Sidebar Backgrounds</h5>
-                        <ul class="theme-color">
-                            <li class="theme-item"><a href="javascript:void(0)" class="theme-link" data-sidebarbg="skin1"></a></li>
-                            <li class="theme-item"><a href="javascript:void(0)" class="theme-link" data-sidebarbg="skin2"></a></li>
-                            <li class="theme-item"><a href="javascript:void(0)" class="theme-link" data-sidebarbg="skin3"></a></li>
-                            <li class="theme-item"><a href="javascript:void(0)" class="theme-link" data-sidebarbg="skin4"></a></li>
-                            <li class="theme-item"><a href="javascript:void(0)" class="theme-link" data-sidebarbg="skin5"></a></li>
-                            <li class="theme-item"><a href="javascript:void(0)" class="theme-link" data-sidebarbg="skin6"></a></li>
-                        </ul>
-                        <!-- Logo BG -->
-                    </div>
-                </div>
-                <!-- End Tab 1 -->
-            </div>
-        </div>
-    </aside>
+    <?php include_once 'views/includes/customiser.php' ?>   
+    <!-- end customizer Panel -->
 
     <div class="chat-windows"></div>
-    <!-- ============================================================== -->
     <!-- All Jquery -->
-    <!-- ============================================================== -->
-    <script src="assets/libs/jquery/dist/jquery.min.js"></script>
-    <!-- Bootstrap tether Core JavaScript -->
-    <script src="assets/libs/popper.js/dist/umd/popper.min.js"></script>
-    <script src="assets/libs/bootstrap/dist/js/bootstrap.min.js"></script>
-    <!-- apps -->
-    <script src="dist/js/app.min.js"></script>
-    <script src="dist/js/app.init.js"></script>
-    <script src="dist/js/app-style-switcher.js"></script>
-    <!-- slimscrollbar scrollbar JavaScript -->
-    <script src="assets/libs/perfect-scrollbar/dist/perfect-scrollbar.jquery.min.js"></script>
-    <script src="assets/extra-libs/sparkline/sparkline.js"></script>
-    <!--Wave Effects -->
-    <script src="dist/js/waves.js"></script>
-    <!--Menu sidebar -->
-    <script src="dist/js/sidebarmenu.js"></script>
-    <!--Custom JavaScript -->
-    <script src="dist/js/custom.min.js"></script>
-    <!--This page plugins -->
-    <script src="assets/extra-libs/DataTables/datatables.min.js"></script>
-    <!-- start - This is for export functionality only -->
-    <script src="https://cdn.datatables.net/buttons/1.5.1/js/dataTables.buttons.min.js"></script>
-    <script src="https://cdn.datatables.net/buttons/1.5.1/js/buttons.flash.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.1.3/jszip.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.32/pdfmake.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.32/vfs_fonts.js"></script>
-    <script src="https://cdn.datatables.net/buttons/1.5.1/js/buttons.html5.min.js"></script>
-    <script src="https://cdn.datatables.net/buttons/1.5.1/js/buttons.print.min.js"></script>
-    <script src="dist/js/pages/datatable/datatable-advanced.init.js"></script>
+    <?php include_once 'views/includes/script.php' ?> 
 </body>
 
 </html>

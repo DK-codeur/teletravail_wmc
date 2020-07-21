@@ -9,7 +9,7 @@
                             <!-- User Profile-->
                             <div class="user-profile dropdown m-t-20">
                                 <div class="user-pic">
-                                    <img src="style/assets/images/users/1.jpg" alt="users" class="rounded-circle img-fluid" />
+                                    <img src="style/assets/images/users/1.jpg" alt="users" class="rounded-circle img-fluid"/>
                                 </div>
                                 <div class="user-content hide-menu m-t-10">
                                     <h5 class="m-b-10 user-name font-medium">Teletravail</h5>
@@ -18,14 +18,14 @@
                             <!-- End User Profile-->
                         </li>
                         <li class="sidebar-item">
-                            <a class="sidebar-link waves-effect waves-dark sidebar-link" href="index.html" aria-expanded="false">
+                            <a class="sidebar-link waves-effect waves-dark sidebar-link" href="home" aria-expanded="false">
                                 <i class="sl-icon-home"></i>
                                 <span class="hide-menu">Dashboard</span>
                             </a>
                         </li>
 
                         <li class="sidebar-item">
-                            <a class="sidebar-link waves-effect waves-dark sidebar-link" href="new-reunion.html" aria-expanded="false">
+                            <a class="sidebar-link waves-effect waves-dark sidebar-link" href="new-reunion" aria-expanded="false">
                                 <i class="sl-icon-people"></i>
                                 <span class="hide-menu">Organiser une reunion</span>
                             </a>
@@ -45,7 +45,7 @@
                                     </a>
                                 </li>
                                 <li class="sidebar-item">
-                                    <a href="membre.html" class="sidebar-link">
+                                    <a href="membre" class="sidebar-link">
                                         <i class="mdi mdi-octagram"></i>
                                         <span class="hide-menu"> Liste des Membres</span>
                                     </a>
@@ -62,18 +62,17 @@
                             </a>
                             <ul aria-expanded="false" class="collapse first-level">
                                 <li class="sidebar-item">
-                                    <a href="nouveau-email.html" class="sidebar-link">
+                                    <a href="new-email" class="sidebar-link">
                                         <i class="mdi mdi-octagram"></i>
                                         <span class="hide-menu"> Nouveau email</span>
                                     </a>
                                 </li>
                                 <li class="sidebar-item">
-                                    <a href="email-envoye.html" class="sidebar-link">
+                                    <a href="email-envoye" class="sidebar-link">
                                         <i class="mdi mdi-octagram"></i>
                                         <span class="hide-menu"> Email envoyes</span>
                                     </a>
                                 </li>
-                               
                                 
                             </ul>
                         </li>
@@ -97,7 +96,6 @@
                                     </a>
                                 </li>
                                
-                                
                             </ul>
                         </li>
 

@@ -17,7 +17,6 @@
         <?php include_once 'views/includes/leftside.php' ?>
         <!--END SIDE BAR-->
 
-
         <!-- Page wrapper  -->
         <div class="page-wrapper">
 
@@ -26,7 +25,7 @@
                 <div class="row m-t-40">
                     <!-- Column -->
                     <div class="col-md-6 col-lg-3 col-xlg-3">
-                        <a href="new-reunion.html">
+                        <a href="new-reunion">
                             <div class="card card-hover">
                                 <div class="box bg-info text-center">
                                     <h1 class="font-light text-white"><i class="sl-icon-people"></i></h1>
@@ -37,7 +36,7 @@
                     </div>
                     <!-- Column -->
                     <div class="col-md-6 col-lg-3 col-xlg-3">
-                        <a href="nouveau-email.html">
+                        <a href="new-email">
                             <div class="card card-hover">
                                 <div class="box bg-primary text-center">
                                     <h1 class="font-light text-white"><i class="mdi mdi-email-outline"></i></h1>
