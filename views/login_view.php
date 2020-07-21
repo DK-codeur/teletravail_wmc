@@ -62,7 +62,7 @@
                         <!-- User Profile-->
                         <div class="user-profile dropdown m-t-20">
                             <div class="user-pic">
-                                <img src="assets/images/users/1.jpg" alt="users" class="rounded-circle img-fluid" />
+                                <img src="style/assets/images/users/1.jpg" alt="users" class="rounded-circle img-fluid" />
                             </div>
                             <div class="user-content hide-menu m-t-10">
                                 <h5 class="m-b-10 user-name font-medium">Teletravail</h5>
@@ -89,7 +89,8 @@
                                 <input type="text" class="form-control" placeholder="Mot de passe" aria-label="Username" aria-describedby="basic-addon1">
                             </div>
 
-                            <button type="submit" class="btn btn-info btn-block waves-effect waves-light">Connexion</button>
+                            <!-- <button type="submit" class="btn btn-info btn-block waves-effect waves-light">Connexion</button> -->
+                            <a href="home" class="btn btn-info btn-block waves-effect waves-light">Connexion</a>
                         </form>
                     </div>
 
@@ -105,9 +106,9 @@
             <!-- ============================================================== -->
             <!-- Container fluid  -->
             <!-- ============================================================== -->
-            <div class="container-fluid">
+            <div class="container">
                
-                
+                <img src="style/assets/images/login_cover.svg" alt="">
                
             </div>
     

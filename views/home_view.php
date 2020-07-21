@@ -69,7 +69,8 @@
                 </div>
             </div>
             <!-- end dashbord summury -->
-       
+
+            <div class="container">
             <div class="row">
                 <!-- Column -->
                 <div class="col-lg-12 col-xl-12 col-md-12">
@@ -341,6 +342,7 @@
                     </div>
                 </div>
                 <!-- Column -->
+            </div>
             </div>
 
             <div class="modal fade" id="createmodel" tabindex="-1" role="dialog" aria-labelledby="createModalLabel" aria-hidden="true">
