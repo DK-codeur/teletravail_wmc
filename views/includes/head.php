@@ -29,7 +29,7 @@
 
 <link href="style/assets/libs/summernote/dist/summernote-bs4.css" rel="stylesheet">
 <link href="style/assets/libs/dropzone/dist/min/dropzone.min.css" rel="stylesheet">
-<link rel="stylesheet" type="text/css" href="style/assets/libs/select2/dist/css/select2.min.css">
+<link href="style/assets/libs/select2/dist/css/select2.min.css" rel="stylesheet" type="text/css">
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>

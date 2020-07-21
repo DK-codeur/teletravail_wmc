@@ -126,6 +126,11 @@
                             </div>
 
                             <div class="form-group">
+                                <label for="">Message</label>
+                                <textarea name="reunion_msg" id="" cols="30" rows="10" class="form-control"></textarea>
+                            </div>
+
+                            <div class="form-group">
                                 <label for="subject">Date</label>
                                 <input type="date" id="subject" name="date" class="form-control" placeholder="Date de la reunion">
                             </div>

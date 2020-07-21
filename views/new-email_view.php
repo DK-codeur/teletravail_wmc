@@ -57,6 +57,7 @@
                     <div class="card-body">
                         <form>
                             <div class="form-group">
+                                <label for="">Destinataires</label>
                                 <select class="select2 form-control select2-hidden-accessible" multiple="" style="height: 36px;width: 100%;" data-select2-id="13" tabindex="-1" aria-hidden="true">
                                     <optgroup label="Alaskan/Hawaiian Time Zone" data-select2-id="524">
                                         <option value="AK" data-select2-id="525">Alaska</option>
@@ -121,9 +122,15 @@
                                 </select>
                             </div>
                             <div class="form-group">
-                                <input type="text" id="example-subject" name="example-subject" class="form-control" placeholder="Subject">
+                                <label for="">Sujet</label>
+                                <input type="text" id="example-subject" name="example-subject" class="form-control" placeholder="sujet">
                             </div>
-                            <div id="summernote"></div>
+                            <!-- <div id="summernote"></div> -->
+                            <div class="form-group">
+                                <label for="">Message</label>
+                                <textarea name="email_msg" id="" cols="30" rows="10" class="form-control"></textarea>
+                            </div>
+
                             <h4>Attachment</h4>
                             <div class="dropzone" id="dzid">
                                 <div class="fallback">
@@ -131,8 +138,8 @@
                                 </div>
                             </div>
                             <button type="submit" class="btn btn-success m-t-20">
-                                <i class="far fa-envelope"></i> Send</button>
-                            <button type="submit" class="btn btn-dark m-t-20">Discard</button>
+                                <i class="far fa-envelope"></i> Envoyer</button>
+                            <button type="submit" class="btn btn-dark m-t-20">Annuler</button>
                         </form>
                         <!-- Action part -->
                     </div>
