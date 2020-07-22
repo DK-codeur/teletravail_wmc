@@ -47,8 +47,7 @@
                                                 <th>Prenoms</th>
                                                 <th>Telephone</th>
                                                 <th>Email</th>
-                                                <th>Pays</th>
-                                                <th>Ville</th>
+                                                <th>Ville/commune</th>
                                                 <th>Inscrit le</th>
                                                 <th>Actions</th>
                                             </tr>
@@ -62,7 +61,6 @@
                                                 <td> Adj*bi</td>
                                                 <td>88202012</td>
                                                 <td>djdk@dhd.co</td>
-                                                <td>france</td>
                                                 <td>Paris</td>
                                                 <td>12-10-2014</td>
                                                 <td>
@@ -78,7 +76,6 @@
                                                 <td> Adj*bi</td>
                                                 <td>88202012</td>
                                                 <td>djdk@dhd.co</td>
-                                                <td>france</td>
                                                 <td>Paris</td>
                                                 <td>12-10-2014</td>
                                                 <td>
@@ -94,7 +91,6 @@
                                                 <td> Adj*bi</td>
                                                 <td>88202012</td>
                                                 <td>djdk@dhd.co</td>
-                                                <td>france</td>
                                                 <td>Paris</td>
                                                 <td>12-10-2014</td>
                                                 <td>
@@ -110,7 +106,6 @@
                                                 <td> Adj*bi</td>
                                                 <td>88202012</td>
                                                 <td>djdk@dhd.co</td>
-                                                <td>france</td>
                                                 <td>Paris</td>
                                                 <td>12-10-2014</td>
                                                 <td>
@@ -126,7 +121,6 @@
                                                 <td> Adj*bi</td>
                                                 <td>88202012</td>
                                                 <td>djdk@dhd.co</td>
-                                                <td>france</td>
                                                 <td>Paris</td>
                                                 <td>12-10-2014</td>
                                                 <td>
@@ -142,7 +136,6 @@
                                                 <td> Adj*bi</td>
                                                 <td>88202012</td>
                                                 <td>djdk@dhd.co</td>
-                                                <td>france</td>
                                                 <td>Paris</td>
                                                 <td>12-10-2014</td>
                                                 <td>
@@ -158,7 +151,6 @@
                                                 <td> Adj*bi</td>
                                                 <td>88202012</td>
                                                 <td>djdk@dhd.co</td>
-                                                <td>france</td>
                                                 <td>Paris</td>
                                                 <td>12-10-2014</td>
                                                 <td>
@@ -174,7 +166,6 @@
                                                 <td> Adj*bi</td>
                                                 <td>88202012</td>
                                                 <td>djdk@dhd.co</td>
-                                                <td>france</td>
                                                 <td>Paris</td>
                                                 <td>12-10-2014</td>
                                                 <td>
@@ -190,7 +181,6 @@
                                                 <td> Adj*bi</td>
                                                 <td>88202012</td>
                                                 <td>djdk@dhd.co</td>
-                                                <td>france</td>
                                                 <td>Paris</td>
                                                 <td>12-10-2014</td>
                                                 <td>
@@ -206,7 +196,6 @@
                                                 <td> Adj*bi</td>
                                                 <td>88202012</td>
                                                 <td>djdk@dhd.co</td>
-                                                <td>france</td>
                                                 <td>Paris</td>
                                                 <td>12-10-2014</td>
                                                 <td>
@@ -222,7 +211,6 @@
                                                 <td> Adj*bi</td>
                                                 <td>88202012</td>
                                                 <td>djdk@dhd.co</td>
-                                                <td>france</td>
                                                 <td>Paris</td>
                                                 <td>12-10-2014</td>
                                                 <td>
@@ -238,7 +226,6 @@
                                                 <td> Adj*bi</td>
                                                 <td>88202012</td>
                                                 <td>djdk@dhd.co</td>
-                                                <td>france</td>
                                                 <td>Paris</td>
                                                 <td>12-10-2014</td>
                                                 <td>
@@ -254,7 +241,6 @@
                                                 <td> Adj*bi</td>
                                                 <td>88202012</td>
                                                 <td>djdk@dhd.co</td>
-                                                <td>france</td>
                                                 <td>Paris</td>
                                                 <td>12-10-2014</td>
                                                 <td>
@@ -270,7 +256,6 @@
                                                 <td> Adj*bi</td>
                                                 <td>88202012</td>
                                                 <td>djdk@dhd.co</td>
-                                                <td>france</td>
                                                 <td>Paris</td>
                                                 <td>12-10-2014</td>
                                                 <td>
@@ -286,7 +271,21 @@
                                                 <td> Adj*bi</td>
                                                 <td>88202012</td>
                                                 <td>djdk@dhd.co</td>
-                                                <td>france</td>
+                                                <td>Paris</td>
+                                                <td>12-10-2014</td>
+                                                <td>
+                                                    <button type="button" class="btn btn-sm btn-icon btn-pure btn-outline delete-row-btn"  data-target="#createmodel" data-toggle="modal" data-original-title="edit"><i class="ti-pencil" aria-hidden="true"></i></button>
+                                                    <button type="button" onclick="return confirm('Etes vous sur de vouloir supprimer ?')" class="btn btn-sm btn-icon btn-pure btn-outline delete-row-btn" data-toggle="tooltip" data-original-title="Delete"><i class="ti-close" aria-hidden="true"></i></button>
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+                                                <td>
+                                                    <a href="#!"><img src="style/assets/images/users/1.jpg" alt="user" class="rounded-circle" width="30" /> Nicole</a>
+                                                </td>
+                                                <td> Adj*bi</td>
+                                                <td>88202012</td>
+                                                <td>djdk@dhd.co</td>
                                                 <td>Paris</td>
                                                 <td>12-10-2014</td>
                                                 <td>

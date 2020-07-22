@@ -132,17 +132,16 @@
 
                             <div class="form-group">
                                 <label for="subject">Date</label>
-                                <input type="date" id="subject" name="date" class="form-control" placeholder="Date de la reunion">
+                                <input type="text"  onfocus="(this.type = 'date')" id="subject" name="date" class="form-control" placeholder="Date de la reunion">
                             </div>
 
                             <div class="form-group">
                                 <label for="subject">Heure</label>
-                                <input type="time" id="subject" name="date" class="form-control" placeholder="Heure de la reunion">
+                                <input type="text"  onfocus="(this.type = 'time')" id="subject" name="date" class="form-control" placeholder="Heure de la reunion">
                             </div>
                             <!-- <div id="summernote"></div> -->
                             
-                            <button type="submit" class="btn btn-success m-t-20">
-                                <i class="far fa-envelope"></i> Organiser</button>
+                            <button type="submit" class="btn btn-success m-t-20"> <i class="far fa-envelope"></i> Organiser</button>
                             <button type="submit" class="btn btn-dark m-t-20">Annuler</button>
                         </form>
                         <!-- Action part -->

@@ -5,6 +5,7 @@ RewriteEngine on
 
 RewriteRule ^home$ index.php?page=home
 RewriteRule ^login$ index.php?page=login
+RewriteRule ^register$ index.php?page=register
 RewriteRule ^new-reunion$ index.php?page=new-reunion
 RewriteRule ^new-email$ index.php?page=new-email
 RewriteRule ^email-envoye$ index.php?page=email-envoye

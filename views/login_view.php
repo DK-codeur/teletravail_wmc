@@ -62,7 +62,7 @@
                         <!-- User Profile-->
                         <div class="user-profile dropdown m-t-20">
                             <div class="user-pic">
-                                <img src="style/assets/images/users/1.jpg" alt="users" class="rounded-circle img-fluid" />
+                                <img src="style/assets/images/users/ci.png" alt="users" class="rounded-circle img-fluid" />
                             </div>
                             <div class="user-content hide-menu m-t-10">
                                 <h5 class="m-b-10 user-name font-medium">Teletravail</h5>
@@ -92,6 +92,9 @@
                             <!-- <button type="submit" class="btn btn-info btn-block waves-effect waves-light">Connexion</button> -->
                             <a href="home" class="btn btn-info btn-block waves-effect waves-light">Connexion</a>
                         </form>
+                        <br>
+
+                        <p class="text-center"><a href="register">ou s'insrire ici</a></p>
                     </div>
 
                 </ul>

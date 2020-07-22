@@ -28,7 +28,7 @@
                     <a class="ti-menu ti-close btn btn-success show-left-part d-block d-md-none" href="javascript:void(0)"></a>
                     <div class="scrollable" style="height:100%;">
                         <div class="p-15">
-                            <a class="waves-effect waves-light btn btn-danger d-block" href="email-envoye.html">Liste des Email Envoyes</a>
+                            <a class="waves-effect waves-light btn btn-danger d-block" href="email-envoye">Liste des Email Envoyes</a>
                         </div>
                         <div class="divider"></div>
                         <ul class="list-group">

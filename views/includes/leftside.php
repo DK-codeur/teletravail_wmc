@@ -9,7 +9,7 @@
                             <!-- User Profile-->
                             <div class="user-profile dropdown m-t-20">
                                 <div class="user-pic">
-                                    <img src="style/assets/images/users/1.jpg" alt="users" class="rounded-circle img-fluid"/>
+                                    <img src="style/assets/images/users/ci.png" alt="users" class="rounded-circle img-fluid"/>
                                 </div>
                                 <div class="user-content hide-menu m-t-10">
                                     <h5 class="m-b-10 user-name font-medium">Teletravail</h5>
@@ -39,7 +39,7 @@
                             </a>
                             <ul aria-expanded="false" class="collapse first-level">
                                 <li class="sidebar-item">
-                                    <a href="!#" class="sidebar-link">
+                                    <a href="#" data-target="#createMember" data-toggle="modal" data-original-title="edit" class="sidebar-link">
                                         <i class="mdi mdi-octagram"></i>
                                         <span class="hide-menu"> Nouveau Membre</span>
                                     </a>
