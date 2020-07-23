@@ -23,6 +23,9 @@
 
 <!-- CSS Styles -->
 <link rel="stylesheet" type="text/css" href="style/assets/libs/bootstrap/dist/css/bootstrap.min.css">
+<!-- <link href="https://gitcdn.github.io/bootstrap-toggle/2.2.2/css/bootstrap-toggle.min.css" rel="stylesheet"> -->
+<link href="style/dist/css/bootstrap-toggle.min.css" rel="stylesheet">
+
 <link href="style/dist/css/style.min.css" rel="stylesheet">
 
 <link href="style/assets/libs/datatables.net-bs4/css/dataTables.bootstrap4.css" rel="stylesheet">

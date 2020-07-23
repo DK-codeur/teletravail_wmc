@@ -47,7 +47,7 @@
                     </div>
                     <!-- Column -->
                     <div class="col-md-6 col-lg-3 col-xlg-3">
-                        <a href="#">
+                        <a href="new-sms">
                             <div class="card card-hover">
                                 <div class="box bg-success text-center">
                                     <h1 class="font-light text-white"><i class="mdi mdi-message-outline"></i></h1>

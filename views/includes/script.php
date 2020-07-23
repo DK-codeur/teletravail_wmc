@@ -7,6 +7,7 @@
     <script src="style/dist/js/app.min.js"></script>
     <script src="style/dist/js/app.init.js"></script>
     <script src="style/dist/js/app-style-switcher.js"></script>
+    <script src="style/dist/js/bootstrap-toggle.min.js"></script>
     <!-- slimscrollbar scrollbar JavaScript -->
     <script src="style/assets/libs/perfect-scrollbar/dist/perfect-scrollbar.jquery.min.js"></script>
     <script src="style/assets/extra-libs/sparkline/sparkline.js"></script>

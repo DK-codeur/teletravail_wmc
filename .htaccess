@@ -8,6 +8,7 @@ RewriteRule ^login$ index.php?page=login
 RewriteRule ^register$ index.php?page=register
 RewriteRule ^new-reunion$ index.php?page=new-reunion
 RewriteRule ^new-email$ index.php?page=new-email
+RewriteRule ^new-sms$ index.php?page=new-sms
 RewriteRule ^email-envoye$ index.php?page=email-envoye
 RewriteRule ^membre$ index.php?page=membre
 

@@ -84,7 +84,7 @@
                             </a>
                             <ul aria-expanded="false" class="collapse first-level">
                                 <li class="sidebar-item">
-                                    <a href="javascript:void(0)" class="sidebar-link">
+                                    <a href="new-sms" class="sidebar-link">
                                         <i class="mdi mdi-octagram"></i>
                                         <span class="hide-menu"> Nouveau SMS</span>
                                     </a>
